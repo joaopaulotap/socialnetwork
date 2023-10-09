@@ -1,9 +1,11 @@
 import styles from './Header.module.css'
 
+import headerLogo from '../assets/header-logo.svg'
+
 export function Header () {
     return (
         <header className={styles.header}>
-        <strong>Twitter</strong>
+        <img src={headerLogo} alt="Logo" />
         </header>
     );
 }
