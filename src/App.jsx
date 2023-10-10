@@ -1,10 +1,10 @@
-import { Post } from './Post';
+import { Post } from './componets/Post';
 import { Header } from './componets/Header';
+import { Sidebar } from './componets/Sidebar';
 
 import styles from './App.module.css'
 
 import './global.css';
-import { Sidebar } from './componets/Sidebar';
 
 export function App() {
   return (
@@ -14,14 +14,8 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-        <Post
-        author="Joao Paulo Santos"
-        content="Wayter foi lavar o carro e chuveu! kkkkk"
-        />
-        <Post
-        author="Wayter Paulo"
-        content="Chuva me atrapalhou :´(" 
-        />
+        <Post />
+        <Post />
         </main>
       </div>
       
